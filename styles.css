@@ -32,13 +32,14 @@ body {
     border-color: black;
 }
 
-.btn.correct {
-    background-color: green;
-    color: black;
-}
+
 
 .btn.wrong {
     background-color: red;
+}
+
+.btn.correct {
+    background-color: green;
 }
 
 .start-btn, .next-btn {
