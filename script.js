@@ -134,7 +134,7 @@ anwserButtonsElement.addEventListener("click", checkAnwser)
 //hides question container, reveals high score/save container, and lists the last high score.
 function showScore(){
     scoreContainer.classList.remove("hide");
-    startButton.classList.remove("hide");
+    //startButton.classList.remove("hide");
     questionContainerElement.classList.add("hide");
     scoreContainer.classList.remove("hide");
 }
