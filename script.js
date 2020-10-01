@@ -16,7 +16,10 @@ var lastScore = document.getElementById("lastScore");
 //timer variables 
 var timeElement= document.getElementById("timer");
 var secondsLeft = 100;
+var endTimer = false;
 //
+
+var score = secondsLeft + 0;
 
 //Timer count down function
 var myCountDown = setInterval(function(){
@@ -24,6 +27,8 @@ var myCountDown = setInterval(function(){
     timeElement.textContent= "Timer/Score: " + secondsLeft + " seconds.";
 
     if(secondsLeft===0){
+        clearInterval(myCountDown)
+    if(endTimer===true)
         clearInterval(myCountDown)
     }
 }, 1000)//milliseceonds 
@@ -125,8 +130,10 @@ anwserButtonsElement.addEventListener("click", checkAnwser)
                 renderQuestion (runningQuestion++); //prompts next question until there is none left
             } else {
                 console.log ("finish")
-                clearInterval(myCountDown); //Stops timer
-                showScore();
+                setTimeout(function(){ //delays showScore function in case user gets the last question wrong, before adding this the timer would stop without subtracting 30 seconds
+                    clearInterval(myCountDown); //Stops timer
+                    showScore();
+                }, 1000)
             }        
     }
 //
