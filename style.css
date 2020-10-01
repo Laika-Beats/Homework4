@@ -3,4 +3,47 @@
     
 }
 
+#timer {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+}
+
+.choices {
+    margin: auto;
+    width: 60%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+#question {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.input-group {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+}
+
+#start-btn {
+  width: 50%;
+  margin: 200px;
+  padding: 10px;
+}

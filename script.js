@@ -21,7 +21,7 @@ var secondsLeft = 100;
 //Timer count down function
 var myCountDown = setInterval(function(){
     secondsLeft--;
-    timeElement.textContent= secondsLeft + "seconds left until the end";
+    timeElement.textContent= "Timer/Score: " + secondsLeft + " seconds.";
 
     if(secondsLeft===0){
         clearInterval(myCountDown)
